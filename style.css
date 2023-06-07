@@ -367,9 +367,27 @@ textarea {
 footer{
   background: #1F1F1F;
 }
-footer i{
+.footer{
+  min-height: 483px;
+  padding-top: 71px;
+  padding-bottom: 63px;
+}
+.footer .logo{
+  width: 100%;
+}
+.footer-container{
+  height: 100%;
+}
+footer .social-media i{
+  color: rgba(255, 255, 255, 0.7);;
+}
+footer .social-media i:hover{
   color: white;
 }
+.footer li{
+  list-style: url(./assets/footer-arrow.png);
+}
+
 .btn-read {
   background: none;
   border: 1px solid #50a0c8;
