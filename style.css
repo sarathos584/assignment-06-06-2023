@@ -23,6 +23,13 @@
 .text-center {
   text-align: center;
 }
+.section-head {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #1f1f1f;
+}
 .button {
   background: #50a0c8;
   border-radius: 5px;
@@ -36,7 +43,7 @@
 }
 .grid-col-6 {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .row {
   display: grid;
@@ -45,14 +52,30 @@
 .col-lg-4 {
   grid-column: span 4;
 }
+.col-lg-6 {
+  grid-column: span 6;
+}
 .col-lg-8 {
   grid-column: span 8;
 }
+.col-lg-3 {
+  grid-column: span 3;
+}
+
 .pl-4 {
   padding-left: 4rem;
 }
 .pr-4 {
   padding-right: 4rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-2 {
+  margin-top: 2rem;
 }
 .d-flex {
   display: flex;
@@ -61,12 +84,13 @@
 .center-content {
   width: 100%;
   margin: auto;
-  padding: 5dvw;
+  padding: 100px 0px 0px 30%;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 80px;
 }
 .topnav {
   overflow: hidden;
@@ -84,12 +108,29 @@ nav .icon {
   display: none;
 }
 .welcome {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+.welcome {
   background-image: url(./assets/home-bg.jpg);
   background-repeat: no-repeat;
 }
+.welcome-content h1 {
+  margin-bottom: 16px;
+}
+.welcome-content h2 {
+  margin-bottom: 20px;
+}
+.welcome-content p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .welcome img {
   width: 100%;
-  height: 100%;
+  height: 543px;
+  object-fit: cover;
 }
 .welcome h1 {
   font-weight: 600;
@@ -109,16 +150,36 @@ nav .icon {
   line-height: 26px;
   color: #636363;
 }
-.get-started {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
 .get-started h2 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 96px;
 }
-.get-start-img-cont {
+
+.get-started {
   background: url(./assets/collab-tech.png);
   background-repeat: no-repeat;
+  background-size: 30%;
+}
+.get-started img {
+  width: 422px;
+  height: 274px;
+  position: relative;
+  left: 160px;
+}
+.get-started p {
+  font-weight: 400;
+  line-height: 26px;
+  color: #636363;
+  margin-bottom: 34px;
+}
+.products {
+  margin-top: 114px;
+  padding-bottom: 100px;
+}
+.products h2 {
+  margin-bottom: 9px;
+}
+.products p {
+  margin-bottom: 60px;
 }
 .card .card-img {
   background: linear-gradient(0deg, #f4f4f4, #f4f4f4), #f7f7f7;
@@ -154,12 +215,14 @@ nav .icon {
 }
 .case-studies {
   background: #f6f6f6;
-  padding-top: 3rem;
+  padding-top: 296px;
+  padding-bottom: 60px;
 }
-.case-studies .heading {
-  margin-bottom: 3rem;
+.case-studies h2 {
+  margin-bottom: 35px;
 }
 .case-studies p {
+  margin-bottom: 20px;
   line-height: 26px;
   color: #636363;
 }
@@ -169,6 +232,7 @@ nav .icon {
   line-height: 28px;
   color: #1f1f1f;
   text-align: left;
+  margin-bottom: 20px;
 }
 .case-studies .contents a {
   text-decoration: none;
@@ -176,6 +240,7 @@ nav .icon {
   font-size: 26px;
   line-height: 36px;
   color: #50a0c8;
+  margin-bottom: 15px;
 }
 .case-studies .contents p {
   font-weight: 400;
@@ -190,6 +255,121 @@ nav .icon {
 .case-studies .contents {
   text-align: left;
 }
+.fm {
+  margin-bottom: 80px;
+}
+.posts {
+  padding-bottom: 100px;
+}
+.posts h2 {
+  margin-top: 100px;
+  margin-bottom: 46px;
+}
+.post-cards {
+  column-gap: 2rem;
+}
+.card-container {
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+.card-container img {
+  width: 100%;
+}
+.posts .btn-read {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.posts .content-container {
+  padding: 20px;
+}
+.posts .content-container .date {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1f1f1f;
+  margin-bottom: 18px;
+}
+.posts .content-container .post-note {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #636363;
+  margin-top: 29px;
+}
+.posts .content-container a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #50a0c8;
+  text-decoration: none;
+}
+.posts .content-container button {
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 600;
+  line-height: 26px;
+}
+.contact {
+  background: rgba(80, 160, 200, 0.1);
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.contact img {
+  width: 482px;
+  height: 387px;
+}
+.contact h2 {
+  margin-bottom: 65px;
+}
+.input-data {
+  display: block;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.form-container p {
+  font-weight: 400;
+  line-height: 26px;
+  color: #636363;
+  margin-bottom: 12px;
+}
+form input {
+  height: 40px;
+}
+#mailId {
+  width: 100%;
+}
+.name-input {
+display: flex;
+justify-content: space-between;
+}
+#firstName,#lastName{
+  width: 278px;
+}
+.inputs {
+  background: #ffffff;
+  border: 0.2px solid #bfbfbf;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.inputs:hover,
+.inputs:active,
+.inputs:focus {
+  border: 0.5px solid #50a0c8;
+}
+textarea {
+  height: 133px;
+  width: 100%;
+  resize: none;
+}
+footer{
+  background: #1F1F1F;
+}
+footer i{
+  color: white;
+}
 .btn-read {
   background: none;
   border: 1px solid #50a0c8;
@@ -201,6 +381,12 @@ nav .icon {
 .btn-read i {
   margin-left: 0.5rem;
 }
+@media screen and (max-width: 1015px) {
+  .nav-list a,
+  nav button {
+    margin-left: 2rem;
+  }
+}
 
 /* nav bar responsive styling */
 @media screen and (max-width: 926px) {
@@ -209,6 +395,11 @@ nav .icon {
   }
   .row-center {
     place-items: center;
+  }
+  nav {
+    justify-content: space-between;
+    padding-inline-end: 2rem;
+    padding-inline-start: 2rem;
   }
   nav .icon {
     display: inline;
@@ -220,19 +411,33 @@ nav .icon {
   .welcome .content {
     order: 2;
   }
-  .col-lg-4 {
+  .col-lg-4,
+  .col-lg-8,
+  .col-lg-6 {
     grid-column: span 12;
   }
-  .col-lg-8 {
-    grid-column: span 12;
-  }
+
   .case-studies img {
     width: 70%;
     height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-
+  .tasmania-img {
+    order: 1;
+  }
+  .tasmania-content {
+    order: 2;
+  }
   .product-cards {
     grid-template-columns: repeat(2, 6fr);
+  }
+  .form-container {
+    grid-template-columns: 100%;
+  }
+  .contact img {
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 576px) {
