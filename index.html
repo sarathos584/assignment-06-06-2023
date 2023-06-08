@@ -15,22 +15,19 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
   </head>
   <body>
-    <nav class="container-fluid">
+    <nav class="navbar">
       <img src="./assets/logo-main.svg" alt="this is the logo of the company" />
-      <div class="nav-list nav_open topnav" id="myTopnav">
-        <a class="list-items" href="#!">Home</a>
-        <a class="list-items" href="#!">About</a>
-        <a class="list-items" href="#!">Products</a>
-        <a class="list-items" href="#!">Services</a>
-        <a class="list-items" href="#!">Blog</a>
-        <button class="button list-items contact-btn">CONTACT US</button>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+      <a  class="icon" id="toggleBtn" data-flag="true">
+        <i class="fa fa-bars" id="hamburger"></i>
+      </a>
+      <a class="list-items" href="#!">Home</a>
+      <a class="list-items" href="#!">About</a>
+      <a class="list-items" href="#!">Products</a>
+      <a class="list-items" href="#!">Services</a>
+      <a class="list-items" href="#!">Blog</a>
+      <button class="button list-items contact-btn">CONTACT US</button>
     </nav>
     <header>
       <section class="welcome">
@@ -448,12 +445,18 @@
             <div class="support">
               <h2>SERVICE CENTER</h2>
               <a href=""
-                ><img src="./assets/location-icon.svg" alt="location icon" />11 Rays Way,
-                Pakenham, VIC 3810</a
+                ><img src="./assets/location-icon.svg" alt="location icon" />11
+                Rays Way, Pakenham, VIC 3810</a
               >
-              <a href=""><img src="./assets/phone-icon.svg" alt="phone icon" />1300 916 082</a>
               <a href=""
-                ><img src="./assets/main-icon.svg" alt="mail icon" />support@minnovation.com.au</a
+                ><img src="./assets/phone-icon.svg" alt="phone icon" />1300 916
+                082</a
+              >
+              <a href=""
+                ><img
+                  src="./assets/main-icon.svg"
+                  alt="mail icon"
+                />support@minnovation.com.au</a
               >
             </div>
           </div>

@@ -97,15 +97,19 @@ nav {
   align-items: center;
   justify-content: space-around;
   height: 80px;
-  max-width: 995px;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .topnav {
   overflow: hidden;
   display: inline;
 }
-.nav-list a,
-nav button {
-  margin-left: 59px;
+nav img{
+  vertical-align: middle;
+  display: inline-block;
 }
 nav a {
   text-decoration: none;
@@ -120,11 +124,11 @@ nav .icon {
   display: flex;
   align-items: center;
   margin-bottom: 100px;
+  background-image: url(./assets/home-bg.jpg);
+  background-repeat: no-repeat;
 }
 .welcome::before {
   content: "";
-  background-image: url(./assets/home-bg.jpg);
-  background-repeat: no-repeat;
   position: absolute;
   width: 50%;
   height: 100%;
@@ -508,16 +512,28 @@ footer h2 {
     place-items: center;
   }
   nav {
-    justify-content: space-between;
-    padding-inline-end: 2rem;
-    padding-inline-start: 2rem;
+    display: block;
+    height: 100%;
   }
   nav .icon {
+    position: relative;
     display: inline;
+    float: right;
+    top: 24px;
   }
 
   .list-items {
     display: none;
+  }
+  /* responsive navbar styling */
+  .responsive-nav {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .contact-btn{
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
   /* welcome section */
   .welcome .content {
@@ -595,6 +611,9 @@ footer h2 {
   nav{
     padding-left: 5px;
     padding-right: 15px;
+  }
+  nav .icon{
+    top: 15px;
   }
   .card img{
     width: 50%;
