@@ -14,10 +14,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </head>
   <body>
     <nav class="container-fluid">
-      <img src="./assets/logo.jpg" alt="this is the logo of the company" />
+      <img src="./assets/logo-main.svg" alt="this is the logo of the company" />
       <div class="nav-list nav_open topnav" id="myTopnav">
         <a class="list-items" href="#!">Home</a>
         <a class="list-items" href="#!">About</a>
@@ -32,21 +34,24 @@
     </nav>
     <header>
       <section class="welcome">
-        <div class="row">
-          <div class="content welcome-content col-lg-6">
-            <div class="center-content">
-              <h1>AlphaX Data Platform™</h1>
-              <h2>Edge to Insight</h2>
-              <p>
-                Transform data from sensors and field devices into insights for
-                your team.
-              </p>
-              <button class="button">LEARN MORE</button>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <img src="./assets/home-img.png" alt="a guy using new technology" />
-          </div>
+        <!-- <div class="row"> -->
+        <!-- <div class="content welcome-content col-lg-6"> -->
+        <div class="container" id="welcome-container">
+          <!-- <div class="content welcome-content">
+            <div class="center-content container"> -->
+          <h1>AlphaX Data Platform™</h1>
+          <h2>Edge to Insight</h2>
+          <p>
+            Transform data from sensors and field devices into insights for your
+            team.
+          </p>
+          <button class="button">LEARN MORE</button>
+          <!-- </div>
+          </div> -->
+          <!-- <div class="col-lg-6"> -->
+          <!-- <img src="./assets/home-img.png" alt="a guy using new technology" /> -->
+          <!-- </div> -->
+          <!-- </div> -->
         </div>
       </section>
     </header>
@@ -397,6 +402,7 @@
               src="./assets/footer-logo.png"
               alt="logo of company"
               class="logo"
+              id="footerLogo"
             />
             <p>
               Minnovation Technologies design and develop a suite of IoT
@@ -427,25 +433,27 @@
             <div class="sales">
               <h2>SALES & SUPPORT</h2>
               <a href=""
-                ><i class="fa-regular fa-location-dot"></i>1227, 1 Queens Road,
-                Melbourne, VIC 3004</a
+                ><img src="./assets/location-icon.svg" alt="location icon" />
+                1227, 1 Queens Road, Melbourne, VIC 3004</a
               >
-              <a href=""><i class="fa-regular fa-phone"></i>1300 916 082</a>
               <a href=""
-                ><i class="fa-sharp fa-regular fa-envelope"></i
-                >support@minnovation.com.au</a
+                ><img src="./assets/phone-icon.svg" alt="phone icon" /> 1300 916
+                082</a
+              >
+              <a href=""
+                ><img src="./assets/main-icon.svg" alt="mail icon" />
+                support@minnovation.com.au</a
               >
             </div>
             <div class="support">
               <h2>SERVICE CENTER</h2>
               <a href=""
-                ><i class="fa-regular fa-location-dot"></i>11 Rays Way,
+                ><img src="./assets/location-icon.svg" alt="location icon" />11 Rays Way,
                 Pakenham, VIC 3810</a
               >
-              <a href=""><i class="fa-regular fa-phone"></i>1300 916 082</a>
+              <a href=""><img src="./assets/phone-icon.svg" alt="phone icon" />1300 916 082</a>
               <a href=""
-                ><i class="fa-sharp fa-regular fa-envelope"></i
-                >support@minnovation.com.au</a
+                ><img src="./assets/main-icon.svg" alt="mail icon" />support@minnovation.com.au</a
               >
             </div>
           </div>
