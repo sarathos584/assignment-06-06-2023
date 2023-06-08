@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
 @font-face {
   font-family: Roboto;
   src: url(./fonts/Roboto-Regular.ttf);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,6 +43,17 @@
   border: none;
   outline: none;
   white-space: nowrap;
+}
+.btn-read {
+  background: none;
+  border: 1px solid #50a0c8;
+  color: #50a0c8;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.btn-read i {
+  margin-left: 0.5rem;
 }
 .grid-col-6 {
   display: grid;
@@ -91,6 +105,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   height: 80px;
+  max-width: 995px;
 }
 .topnav {
   overflow: hidden;
@@ -342,10 +357,11 @@ form input {
   width: 100%;
 }
 .name-input {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-#firstName,#lastName{
+#firstName,
+#lastName {
   width: 278px;
 }
 .inputs {
@@ -364,40 +380,92 @@ textarea {
   width: 100%;
   resize: none;
 }
-footer{
-  background: #1F1F1F;
-}
-.footer{
-  min-height: 483px;
-  padding-top: 71px;
+footer {
+  background: #1f1f1f;
+  font-family: "Open sans", sans-serif;
+  color: white;
   padding-bottom: 63px;
 }
-.footer .logo{
-  width: 100%;
+.footer {
+  min-height: 404px;
+  padding-top: 51px;
 }
-.footer-container{
-  height: 100%;
+.footer .logo {
+  width: 278px;
+  height: 90.93px;
+  margin-bottom: 7.07px;
 }
-footer .social-media i{
-  color: rgba(255, 255, 255, 0.7);;
-}
-footer .social-media i:hover{
-  color: white;
-}
-.footer li{
-  list-style: url(./assets/footer-arrow.png);
+.company-details {
+  width: 278px;
 }
 
-.btn-read {
-  background: none;
-  border: 1px solid #50a0c8;
-  color: #50a0c8;
-  padding: 0.6rem;
-  border-radius: 0.3rem;
-  cursor: pointer;
+.footer-container {
+  height: 100%;
 }
-.btn-read i {
-  margin-left: 0.5rem;
+footer .social-media i {
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 25px;
+  width: 24px;
+  height: 24px;
+  margin-top: 42px;
+}
+footer .social-media i:hover {
+  color: white;
+}
+.footer li {
+  list-style: url(./assets/footer-arrow.png);
+  margin-bottom: 20.7px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+footer h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.company-details p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.imp-links {
+  min-height: 253px;
+  padding-top: 33px;
+}
+
+.imp-links h2 {
+  margin-bottom: 11px;
+}
+.imp-links a {
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.sales-support {
+  padding-top: 33px;
+}
+.sales-support a {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.sales h2 {
+  margin-bottom: 16px;
+}
+.support h2 {
+  margin-bottom: 12px;
+  margin-top: 35px;
+}
+#copyright{
+  margin-top: 74px;
 }
 @media screen and (max-width: 1015px) {
   .nav-list a,
@@ -456,7 +524,14 @@ footer .social-media i:hover{
   .contact img {
     width: 100%;
     height: auto;
+    margin-bottom: 2rem;
   }
+  .card-container{
+    width: 70%;
+    margin: 1rem auto;
+    
+  }
+ 
 }
 @media screen and (max-width: 576px) {
   .product-cards {
