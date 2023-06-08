@@ -574,6 +574,9 @@ footer h2 {
   }
 }
 @media screen and (max-width: 600px) {
+  .welcome::after{
+    display: none;
+  }
   .product-cards {
     grid-template-columns: 100%;
   }
@@ -592,6 +595,7 @@ footer h2 {
 #lastName {
   width: 100%;
 }
+
 }
 @media screen and (max-width:377px) {
   .container{
