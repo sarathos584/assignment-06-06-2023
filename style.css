@@ -359,11 +359,11 @@ form input {
 }
 .name-input {
   display: flex;
-  justify-content: space-between;
+ gap: 30px;
 }
 #firstName,
 #lastName {
-  width: 278px;
+  width: 100%;
 }
 .inputs {
   background: #ffffff;
@@ -413,10 +413,6 @@ footer .social-media i {
 footer .social-media i:hover {
   color: white;
 }
-.footer li {
-  list-style: url(./assets/footer-arrow.png);
-  margin-bottom: 20.7px;
-}
 footer a {
   color: white;
   text-decoration: none;
@@ -447,6 +443,7 @@ footer h2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  display: block;
 }
 .sales-support {
   padding-top: 33px;
@@ -475,7 +472,7 @@ footer h2 {
 }
 @media screen and (max-width: 1095px) {
   .contact img {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-bottom: 2rem;
   }
@@ -571,92 +568,101 @@ footer h2 {
   .footer {
     padding-left: 1rem;
   }
+
+/* resizing for resposive design */
+.get-started h2 {
+  margin-bottom: 1.5rem;
 }
+.welcome {
+  margin-bottom: 1.5rem;
+}
+#welcome-container {
+  text-align: center;
+}
+#welcome-container p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+#welcome-container h2 {
+  margin-bottom: 0;
+}
+.products {
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.case-studies {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.case-studies h2 {
+  margin-bottom: 1.5rem;
+}
+.case-studies .contents h2 {
+  text-align: center;
+}
+.case-studies .contents {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+.case-studies .contents p {
+  text-align: center;
+  margin-top: 1rem;
+}
+.form-container p{
+  text-align: center;
+}
+.fm {
+  margin-bottom: 1rem;
+}
+.get-start-img-cont {
+  text-align: center;
+}
+.get-started .content {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.posts {
+  padding-bottom: 1.5rem;
+}
+.posts h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.posts .content-container {
+  padding: 5px;
+  text-align: center;
+}
+.posts .content-container .post-note {
+  margin-top: 1rem;
+}
+.posts .btn-read {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.contact {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.contact h2 {
+  margin-bottom: 1.5rem;
+}
+}
+
 @media screen and (max-width: 600px) {
-  .get-started h2 {
-    margin-bottom: 1.5rem;
-  }
-  .welcome {
-    margin-bottom: 1.5rem;
-  }
+
   .welcome::after {
     display: none;
   }
-  #welcome-container {
-    text-align: center;
-  }
-  #welcome-container p {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-  #welcome-container h2 {
-    margin-bottom: 0;
-  }
-  .products {
-    margin-top: 2rem;
-    padding-bottom: 1.5rem;
-  }
-  .case-studies {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-  .case-studies h2 {
-    margin-bottom: 1.5rem;
-  }
-  .case-studies .contents h2 {
-    text-align: center;
-  }
-  .case-studies .contents {
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .case-studies .contents p {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .fm {
-    margin-bottom: 1rem;
-  }
+  
   .product-cards {
     grid-template-columns: 100%;
   }
   .get-started img {
     width: 100%;
   }
-  .get-start-img-cont {
-    text-align: center;
-  }
-  .get-started .content {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-  .posts {
-    padding-bottom: 1.5rem;
-  }
-  .posts h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .posts .content-container {
-    padding: 5px;
-    text-align: center;
-  }
-  .posts .content-container .post-note {
-    margin-top: 1rem;
-  }
-  .posts .btn-read {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .contact {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-  .contact h2 {
-    margin-bottom: 1.5rem;
-  }
+  
   .name-input {
     display: block;
   }
