@@ -14,18 +14,18 @@
         alt="this is the logo of the company"
         id="nav-logo"
       />
-      <a class="icon" id="toggleBtn" data-flag="true">
+      <a href="javascript:void(0)" class="icon" id="toggleBtn" data-flag="true">
         <img src="./assets/bar-icon.svg" alt="bar-icon" id="hamburger" />
       </a>
-      <a class="list-items" href="#!">Home</a>
-      <a class="list-items" href="#!">About</a>
-      <a class="list-items" href="#!">Products</a>
-      <a class="list-items" href="#!">Services</a>
-      <a class="list-items" href="#!">Blog</a>
+      <a class="list-items" href="#welcome">Home</a>
+      <a class="list-items" href="#home">About</a>
+      <a class="list-items" href="#products">Products</a>
+      <a class="list-items" href="#services">Services</a>
+      <a class="list-items" href="#blogs">Blog</a>
       <button class="button list-items contact-btn">CONTACT US</button>
     </nav>
     <header>
-      <section class="welcome">
+      <section class="welcome" id="#welcome">
         <div class="container" id="welcome-container">
           <h1>AlphaX Data Platform™</h1>
           <h2>Edge to Insight</h2>
@@ -38,7 +38,7 @@
       </section>
     </header>
     <main>
-      <section class="get-started container-fluid">
+      <section class="get-started container-fluid" id="home">
         <center>
           <h2 class="section-head">
             Connect and collaborate from asingle pane of glass.
@@ -69,7 +69,7 @@
           </div>
         </div>
       </section>
-      <section class="products container-fluid">
+      <section class="products container-fluid" id="products">
         <center>
           <h2 class="text-center section-head">
             Hardware, software, and services, working together as one.
@@ -90,7 +90,7 @@
                 <img src="./assets/macos.png" alt="mac os picture" />
               </div>
               <div class="card-title">
-                <a href="">Data Managment Platform</a>
+                <a href="#">Data Managment Platform</a>
               </div>
             </div>
             <div class="card">
@@ -101,7 +101,7 @@
                 />
               </div>
               <div class="card-title">
-                <a href="">Edge To Cloud Connectivity</a>
+                <a href="#">Edge To Cloud Connectivity</a>
               </div>
             </div>
             <div class="card">
@@ -112,7 +112,7 @@
                 />
               </div>
               <div class="card-title">
-                <a href="">Real Time Video Analytics</a>
+                <a href="#">Real Time Video Analytics</a>
               </div>
             </div>
             <div class="card">
@@ -123,7 +123,7 @@
                 />
               </div>
               <div class="card-title">
-                <a href="">Sensing As a Service Managed Service</a>
+                <a href="#">Sensing As a Service Managed Service</a>
               </div>
             </div>
             <div class="card">
@@ -131,7 +131,7 @@
                 <img src="./assets/vendor-motorpng.png" alt="vendor machine" />
               </div>
               <div class="card-title">
-                <a href="">Iot Vendor Market Place</a>
+                <a href="#">Iot Vendor Market Place</a>
               </div>
             </div>
             <div class="card">
@@ -142,13 +142,13 @@
                 />
               </div>
               <div class="card-title">
-                <a href="">Partners, Resellers and Integrators</a>
+                <a href="#">Partners, Resellers and Integrators</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="case-studies">
+      <section class="case-studies" id="services">
         <div class="container">
           <center><h2 class="section-head">Case Studies</h2></center>
           <p class="text-center">
@@ -159,7 +159,7 @@
           </p>
           <div class="container">
             <div class="fm fm-one row row-center">
-              <div class="col-lg-4">
+              <div class="col-lg-4 img-cont">
                 <img
                   src="./assets/fm-one-img.png"
                   alt="picture of a building"
@@ -167,7 +167,7 @@
               </div>
               <div class="contents container col-lg-8">
                 <h2>Facilities Management</h2>
-                <a href=""
+                <a href="#"
                   >Preventing catastrophic HVAC Failures in HIgh Rise
                   Accomodation</a
                 >
@@ -182,17 +182,17 @@
                 </p>
 
                 <button class="btn-read">
-                  Read More<i
-                    class="fa fa-arrow-right"
-                    style="color: #50a0c8"
-                  ></i>
+                  Read More<img
+                    src="./assets/arrow-exp.svg"
+                    alt="this is an svg of arrow"
+                  />
                 </button>
               </div>
             </div>
             <div class="fm fm-two row row-center">
               <div class="contents container col-lg-8 tasmania-content">
                 <h2>Facilities Management</h2>
-                <a href=""
+                <a href="#"
                   >Optimised Scheduling of Essential Services at Remote Managed
                   Facility
                 </a>
@@ -207,13 +207,14 @@
                 </p>
 
                 <button class="btn-read">
-                  Read More<i
-                    class="fa fa-arrow-right"
-                    style="color: #50a0c8"
-                  ></i>
+                  Read More
+                  <img
+                    src="./assets/arrow-exp.svg"
+                    alt="this is an svg of arrow"
+                  />
                 </button>
               </div>
-              <div class="col-lg-4 tasmania-img">
+              <div class="col-lg-4 tasmania-img img-cont">
                 <img
                   src="./assets/fm-two-img.png"
                   alt="picture of Tasmania-Australia"
@@ -222,7 +223,7 @@
               </div>
             </div>
             <div class="fm fm-three row row-center">
-              <div class="col-lg-4">
+              <div class="col-lg-4 img-cont">
                 <img
                   src="./assets//fm-three-img.png"
                   alt="picture of construction work"
@@ -244,10 +245,11 @@
                 </p>
 
                 <button class="btn-read">
-                  Read More<i
-                    class="fa fa-arrow-right"
-                    style="color: #50a0c8"
-                  ></i>
+                  Read More
+                  <img
+                    src="./assets/arrow-exp.svg"
+                    alt="this is an svg of arrow"
+                  />
                 </button>
               </div>
             </div>
@@ -255,7 +257,7 @@
           <center><button class="button">VIEW ALL</button></center>
         </div>
       </section>
-      <section class="posts">
+      <section class="posts" id="blogs">
         <center><h2 class="section-head">Blogs, News and Events</h2></center>
         <div class="container">
           <div class="row post-cards">
@@ -268,7 +270,7 @@
               </div>
               <div class="content-container">
                 <p class="date">February 28th, 2021</p>
-                <a href="#!"
+                <a href="#"
                   >Redefining Building Management Systems with IoT & cloud-based
                   monitoring</a
                 >
@@ -288,7 +290,7 @@
               </div>
               <div class="content-container">
                 <p class="date">February 28th, 2021</p>
-                <a href="#!"
+                <a href="#"
                   >Industry shake-up: accelerometers with wireless vibration
                   sensors</a
                 >
@@ -308,7 +310,7 @@
               </div>
               <div class="content-container">
                 <p class="date">February 28th, 2021</p>
-                <a href="#!"
+                <a href="#"
                   >Global excellence award for its industrial smart sensor
                   range.</a
                 >
@@ -345,6 +347,7 @@
                       id="firstName"
                       placeholder="First Name"
                       class="inputs"
+                      required
                     />
                     <input
                       type="text"
@@ -352,6 +355,7 @@
                       id="lastName"
                       placeholder="Last Name"
                       class="inputs"
+                      required
                     />
                   </div>
                   <input
@@ -360,6 +364,7 @@
                     id="mailId"
                     placeholder="E mail"
                     class="input-data inputs"
+                    required
                   />
                   <textarea
                     name="message"
@@ -368,6 +373,7 @@
                     rows="10"
                     placeholder="Message"
                     class="input-data inputs"
+                    required
                   ></textarea>
                   <button type="submit" class="button">SUBMIT</button>
                 </form>
@@ -393,50 +399,78 @@
               projects better, faster and easier.
             </p>
             <div class="social-media">
-              <a href="!#"><i class="fa-brands fa-square-facebook"></i></a>
-              <a href="!#"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="!#"><i class="fa-brands fa-square-google-plus"></i></a>
-              <a href="!#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="www.facebook.com"
+                ><img src="./assets/fb-logo.svg" alt=""
+              /></a>
+              <a href="www.linkedin.com"
+                ><img src="./assets/in-logo.svg" alt=""
+              /></a>
+              <a href="www.linkedin.com"
+                ><img src="./assets/gplus.svg" alt=""
+              /></a>
+              <a href="www.linkedin.com"
+                ><img src="./assets/youtube.svg" alt=""
+              /></a>
             </div>
           </div>
 
           <div class="col-lg-4 imp-links">
             <h2>IMPORTANT LINKS</h2>
-              <a href=""><img src="./assets/footer-arrow.png" alt="arrow"> Terms and Conditions</a>
-              <a href=""><img src="./assets/footer-arrow.png" alt="arrow">Privacy Policy</a>
-              <a href=""><img src="./assets/footer-arrow.png" alt="arrow">Security</a>
-              <a href=""><img src="./assets/footer-arrow.png" alt="arrow">AlphaX Cloud SLA</a>
-              <a href=""><img src="./assets/footer-arrow.png" alt="arrow">Support Policy</a>
-              <a href=""><img src="./assets/footer-arrow.png" alt="arrow">Warranty Policy</a>
-              <a href=""><img src="./assets/footer-arrow.png" alt="arrow">Service Status</a>
+            <a href="#"
+              ><img src="./assets/footer-arrow.png" alt="arrow" /> Terms and
+              Conditions</a
+            >
+            <a href="#"
+              ><img src="./assets/footer-arrow.png" alt="arrow" />Privacy
+              Policy</a
+            >
+            <a href="#"
+              ><img src="./assets/footer-arrow.png" alt="arrow" />Security</a
+            >
+            <a href="#"
+              ><img src="./assets/footer-arrow.png" alt="arrow" />AlphaX Cloud
+              SLA</a
+            >
+            <a href="#"
+              ><img src="./assets/footer-arrow.png" alt="arrow" />Support
+              Policy</a
+            >
+            <a href="#"
+              ><img src="./assets/footer-arrow.png" alt="arrow" />Warranty
+              Policy</a
+            >
+            <a href="#"
+              ><img src="./assets/footer-arrow.png" alt="arrow" />Service
+              Status</a
+            >
           </div>
           <div class="col-lg-4 sales-support">
             <div class="sales">
               <h2>SALES & SUPPORT</h2>
-              <a href=""
+              <a href="#"
                 ><img src="./assets/location-icon.svg" alt="location icon" />
                 1227, 1 Queens Road, Melbourne, VIC 3004</a
               >
-              <a href=""
+              <a href="#"
                 ><img src="./assets/phone-icon.svg" alt="phone icon" /> 1300 916
                 082</a
               >
-              <a href=""
+              <a href="#"
                 ><img src="./assets/main-icon.svg" alt="mail icon" />
                 support@minnovation.com.au</a
               >
             </div>
             <div class="support">
               <h2>SERVICE CENTER</h2>
-              <a href=""
+              <a href="#"
                 ><img src="./assets/location-icon.svg" alt="location icon" />11
                 Rays Way, Pakenham, VIC 3810</a
               >
-              <a href=""
+              <a href="#"
                 ><img src="./assets/phone-icon.svg" alt="phone icon" />1300 916
                 082</a
               >
-              <a href=""
+              <a href="#"
                 ><img
                   src="./assets/main-icon.svg"
                   alt="mail icon"

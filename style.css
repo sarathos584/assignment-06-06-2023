@@ -359,7 +359,7 @@ form input {
 }
 .name-input {
   display: flex;
- gap: 30px;
+  gap: 30px;
 }
 #firstName,
 #lastName {
@@ -403,15 +403,11 @@ footer {
 .footer-container {
   height: 100%;
 }
-footer .social-media i {
-  color: rgba(255, 255, 255, 0.7);
-  margin-right: 25px;
+footer .social-media img {
   width: 24px;
   height: 24px;
   margin-top: 42px;
-}
-footer .social-media i:hover {
-  color: white;
+  margin-right: 25px;
 }
 footer a {
   color: white;
@@ -469,6 +465,15 @@ footer h2 {
 }
 #copyright {
   margin-top: 74px;
+}
+.btn-read img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  width: 24.4px;
+  height: 15.75px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 @media screen and (max-width: 1095px) {
   .contact img {
@@ -538,7 +543,8 @@ footer h2 {
   .get-started .content {
     text-align: center;
   }
-  .case-studies img {
+
+  .case-studies .img-cont img {
     width: 100%;
     height: auto;
     margin-top: 1rem;
@@ -561,6 +567,9 @@ footer h2 {
     height: auto;
     margin-bottom: 2rem;
   }
+  form {
+    text-align: center;
+  }
   .card-container {
     width: 100%;
     margin: 1rem auto;
@@ -568,101 +577,105 @@ footer h2 {
   .footer {
     padding-left: 1rem;
   }
-
-/* resizing for resposive design */
-.get-started h2 {
-  margin-bottom: 1.5rem;
-}
-.welcome {
-  margin-bottom: 1.5rem;
-}
-#welcome-container {
-  text-align: center;
-}
-#welcome-container p {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  text-align: center;
-}
-#welcome-container h2 {
-  margin-bottom: 0;
-}
-.products {
-  margin-top: 2rem;
-  padding-bottom: 1.5rem;
-}
-.case-studies {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-.case-studies h2 {
-  margin-bottom: 1.5rem;
-}
-.case-studies .contents h2 {
-  text-align: center;
-}
-.case-studies .contents {
-  text-align: center;
-  padding-left: 0;
-  padding-right: 0;
-}
-.case-studies .contents p {
-  text-align: center;
-  margin-top: 1rem;
-}
-.form-container p{
-  text-align: center;
-}
-.fm {
-  margin-bottom: 1rem;
-}
-.get-start-img-cont {
-  text-align: center;
-}
-.get-started .content {
-  margin-top: 1.5rem;
-  text-align: center;
-}
-.posts {
-  padding-bottom: 1.5rem;
-}
-.posts h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-.posts .content-container {
-  padding: 5px;
-  text-align: center;
-}
-.posts .content-container .post-note {
-  margin-top: 1rem;
-}
-.posts .btn-read {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-.contact {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-.contact h2 {
-  margin-bottom: 1.5rem;
-}
+  #copyright {
+    margin-top: 2rem;
+  }
+  footer {
+    padding-bottom: 2rem;
+  }
+  /* resizing for resposive design */
+  .get-started h2 {
+    margin-bottom: 1.5rem;
+  }
+  .welcome {
+    margin-bottom: 1.5rem;
+  }
+  #welcome-container {
+    text-align: center;
+  }
+  #welcome-container p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  #welcome-container h2 {
+    margin-bottom: 0;
+  }
+  .products {
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .case-studies {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .case-studies h2 {
+    margin-bottom: 1.5rem;
+  }
+  .case-studies .contents h2 {
+    text-align: center;
+  }
+  .case-studies .contents {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .case-studies .contents p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .form-container p {
+    text-align: center;
+  }
+  .fm {
+    margin-bottom: 1rem;
+  }
+  .get-start-img-cont {
+    text-align: center;
+  }
+  .get-started .content {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .posts {
+    padding-bottom: 1.5rem;
+  }
+  .posts h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .posts .content-container {
+    padding: 5px;
+    text-align: center;
+  }
+  .posts .content-container .post-note {
+    margin-top: 1rem;
+  }
+  .posts .btn-read {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .contact h2 {
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-
   .welcome::after {
     display: none;
   }
-  
+
   .product-cards {
     grid-template-columns: 100%;
   }
   .get-started img {
     width: 100%;
   }
-  
+
   .name-input {
     display: block;
   }
