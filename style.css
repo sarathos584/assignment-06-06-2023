@@ -5,7 +5,9 @@
   src: url(./fonts/Roboto-Regular.ttf);
 }
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -71,27 +73,9 @@
 .col-lg-3 {
   grid-column: span 3;
 }
-
-.pl-4 {
-  padding-left: 4rem;
+.col-lg-2 {
+  grid-column: 2;
 }
-.pr-4 {
-  padding-right: 4rem;
-}
-.mb-4 {
-  margin-bottom: 4rem;
-}
-.mt-4 {
-  margin-top: 4rem;
-}
-.mt-2 {
-  margin-top: 2rem;
-}
-.d-flex {
-  display: flex;
-  align-items: center;
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -107,7 +91,7 @@ nav {
   overflow: hidden;
   display: inline;
 }
-nav img{
+nav img {
   vertical-align: middle;
   display: inline-block;
 }
@@ -192,11 +176,11 @@ nav .icon {
   background: url(./assets/collab-tech.png);
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 30%;
+  background-size: 24%;
 }
-/* .get-started img {
-  width: inherit;
-} */
+.get-started img {
+  width: 100%;
+}
 .get-started p {
   font-weight: 400;
   line-height: 26px;
@@ -530,8 +514,9 @@ footer h2 {
     display: block;
     margin-bottom: 1rem;
     text-align: center;
+    display: none;
   }
-  .contact-btn{
+  .contact-btn {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
@@ -539,14 +524,26 @@ footer h2 {
   .welcome .content {
     order: 2;
   }
+  .col-lg-2,
   .col-lg-4,
   .col-lg-8,
   .col-lg-6 {
     grid-column: span 12;
   }
-
+  .get-started {
+    background-size: 34%;
+  }
+  .get-started img {
+    width: 50%;
+  }
+  .get-start-img-cont {
+    text-align: center;
+  }
+  .get-started .content {
+    text-align: center;
+  }
   .case-studies img {
-    width: 70%;
+    width: 100%;
     height: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -569,72 +566,143 @@ footer h2 {
     margin-bottom: 2rem;
   }
   .card-container {
-    width: 70%;
+    width: 100%;
     margin: 1rem auto;
+  }
+  .footer {
+    padding-left: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
-  .welcome::after{
+  .get-started h2 {
+    margin-bottom: 1.5rem;
+  }
+  .welcome {
+    margin-bottom: 1.5rem;
+  }
+  .welcome::after {
     display: none;
+  }
+  #welcome-container {
+    text-align: center;
+  }
+  #welcome-container p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  #welcome-container h2 {
+    margin-bottom: 0;
+  }
+  .products {
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .case-studies {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .case-studies h2 {
+    margin-bottom: 1.5rem;
+  }
+  .case-studies .contents h2 {
+    text-align: center;
+  }
+  .case-studies .contents {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .case-studies .contents p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .fm {
+    margin-bottom: 1rem;
   }
   .product-cards {
     grid-template-columns: 100%;
   }
   .get-started img {
-    width: 70%;
+    width: 100%;
   }
   .get-start-img-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+  }
+  .get-started .content {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .posts {
+    padding-bottom: 1.5rem;
+  }
+  .posts h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .posts .content-container {
+    padding: 5px;
+    text-align: center;
+  }
+  .posts .content-container .post-note {
+    margin-top: 1rem;
+  }
+  .posts .btn-read {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .contact h2 {
+    margin-bottom: 1.5rem;
   }
   .name-input {
     display: block;
   }
   #firstName,
-#lastName {
-  width: 100%;
+  #lastName {
+    width: 100%;
+  }
 }
-
-}
-@media screen and (max-width:377px) {
-  .container{
+@media screen and (max-width: 377px) {
+  .container {
     padding-left: 5px;
     padding-right: 5px;
   }
-.content-container{
-  padding: 5px;
-}
-  .post-cards{
+  .content-container {
+    padding: 5px;
+  }
+  .post-cards {
     display: block;
   }
-  nav img{
+  nav #nav-logo {
     width: 150px;
     height: auto;
   }
-  nav{
+  nav {
     padding-left: 5px;
     padding-right: 15px;
   }
-  nav .icon{
+  nav .icon {
     top: 15px;
   }
-  .card img{
+  .card img {
     width: 50%;
   }
-  .get-start-img-cont img{
-   left: 0;
-
+  .get-start-img-cont img {
+    left: 0;
   }
- .footer-container{
-  display: block;
- }
- .company-details {
-  width: 100%;
-  height: 100%;
- }
- #footerLogo{
-  width: 80%;
-  height: auto;
- }
+  .footer-container {
+    display: block;
+  }
+  .company-details {
+    width: 100%;
+    height: 100%;
+  }
+  #footerLogo {
+    width: 80%;
+    height: auto;
+  }
 }

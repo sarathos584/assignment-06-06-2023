@@ -6,21 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>assignment- 06/06/2023</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- <script src="https://kit.fontawesome.com/7fe31e3278.js" crossorigin="anonymous"></script> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <nav class="navbar">
-      <img src="./assets/logo-main.svg" alt="this is the logo of the company" />
+      <img src="./assets/logo-main.svg" alt="this is the logo of the company" id="nav-logo"/>
       <a class="icon" id="toggleBtn" data-flag="true">
-        <i class="fa fa-bars" id="hamburger"></i>
+        <img src="./assets/bar-icon.svg" alt="bar-icon" id="hamburger">
       </a>
       <a class="list-items" href="#!">Home</a>
       <a class="list-items" href="#!">About</a>
@@ -51,7 +42,8 @@
         </center>
         <div class="container">
           <div class="row">
-            <div class="get-start-img-cont col-lg-6">
+            <div class="col-lg-2"></div>
+            <div class="get-start-img-cont col-lg-4">
               <img
                 src="./assets/Analytics-IoT-Platform1.png"
                 alt="analytics IoT platform"
@@ -155,7 +147,7 @@
       <section class="case-studies">
         <div class="container">
           <center><h2 class="section-head">Case Studies</h2></center>
-          <p class="text-center pl-4 pr-4">
+          <p class="text-center">
             Explore customer stories from organizations just like yours, from in
             industries just like yours to see how they&#39;re using data to
             generate insights, make data driven decisions and accelerate their
@@ -169,7 +161,7 @@
                   alt="picture of a building"
                 />
               </div>
-              <div class="contents container col-lg-8 pl-4">
+              <div class="contents container col-lg-8">
                 <h2>Facilities Management</h2>
                 <a href=""
                   >Preventing catastrophic HVAC Failures in HIgh Rise
@@ -193,8 +185,8 @@
                 </button>
               </div>
             </div>
-            <div class="fm fm-two row row-center mb-4">
-              <div class="contents container col-lg-8 pr-4 tasmania-content">
+            <div class="fm fm-two row row-center">
+              <div class="contents container col-lg-8 tasmania-content">
                 <h2>Facilities Management</h2>
                 <a href=""
                   >Optimised Scheduling of Essential Services at Remote Managed
@@ -233,7 +225,7 @@
                   class="col-lg-4"
                 />
               </div>
-              <div class="contents container col-lg-8 pl-4">
+              <div class="contents container col-lg-8 ">
                 <h2>Infrastructure</h2>
                 <a href="">Increasing Critical Asset MTBF at Remote MIne</a>
                 <p>
@@ -458,6 +450,7 @@
         </p>
       </center>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
