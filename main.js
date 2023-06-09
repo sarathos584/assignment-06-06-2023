@@ -2,11 +2,11 @@ $(document).ready(function () {
   $("#toggleBtn").click(function () {
     if ($(this).data("flag")) {
       $(".list-items").addClass("responsive-nav");
-      $("#hamburger").removeClass("fa-bars").addClass("fa-xmark");
+      $('#hamburger').attr("src","./assets/xmark-icon.svg")
       $(this).data("flag", false);
     } else {
       $(".list-items").removeClass("responsive-nav");
-      $("#hamburger").removeClass("fa-xmark").addClass("fa-bars");
+      $('#hamburger').attr("src","./assets/bar-icon.svg")
       $(this).data("flag", true);
     }
   });
