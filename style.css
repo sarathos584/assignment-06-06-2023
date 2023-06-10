@@ -35,6 +35,9 @@
   text-align: center;
   color: #1f1f1f;
 }
+button{
+  cursor: pointer;
+}
 .button {
   background: #50a0c8;
   border-radius: 5px;
@@ -110,6 +113,7 @@ nav .icon {
   margin-bottom: 100px;
   background-image: url(./assets/home-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .welcome::before {
   content: "";
@@ -121,9 +125,10 @@ nav .icon {
 }
 .welcome::after {
   content: "";
-  background-image: url(./assets/home-img.png);
+  background: url(./assets/home-img.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   width: 50%;
   height: 100%;
