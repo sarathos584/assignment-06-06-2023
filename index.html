@@ -8,22 +8,29 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <img
-        src="./assets/logo-main.svg"
-        alt="this is the logo of the company"
-        id="nav-logo"
-      />
-      <a href="javascript:void(0)" class="icon" id="toggleBtn" data-flag="true">
-        <img src="./assets/bar-icon.svg" alt="bar-icon" id="hamburger" />
-      </a>
-      <a class="list-items" href="#welcome">Home</a>
-      <a class="list-items" href="#home">About</a>
-      <a class="list-items" href="#products">Products</a>
-      <a class="list-items" href="#services">Services</a>
-      <a class="list-items" href="#blogs">Blog</a>
-      <button class="button list-items contact-btn">CONTACT US</button>
-    </nav>
+    <div class="nav-container">
+      <nav class="navbar">
+        <img
+          src="./assets/logo-main.svg"
+          alt="this is the logo of the company"
+          id="nav-logo"
+        />
+        <a
+          href="javascript:void(0)"
+          class="icon"
+          id="toggleBtn"
+          data-flag="true"
+        >
+          <img src="./assets/bar-icon.svg" alt="bar-icon" id="hamburger" />
+        </a>
+        <a class="list-items" href="#welcome">Home</a>
+        <a class="list-items" href="#home">About</a>
+        <a class="list-items" href="#products">Products</a>
+        <a class="list-items" href="#services">Services</a>
+        <a class="list-items" href="#blogs">Blog</a>
+        <button class="button list-items contact-btn">CONTACT US</button>
+      </nav>
+    </div>
     <header>
       <section class="welcome" id="#welcome">
         <div class="container" id="welcome-container">
@@ -260,8 +267,8 @@
       <section class="posts" id="blogs">
         <center><h2 class="section-head">Blogs, News and Events</h2></center>
         <div class="container">
-          <div class="row post-cards">
-            <div class="card-container col-lg-4">
+          <div class="d-flex post-cards">
+            <div class="card-container flex-1">
               <div class="img-container">
                 <img
                   src="./assets/post1.png"
@@ -281,7 +288,7 @@
                 </p>
               </div>
             </div>
-            <div class="card-container col-lg-4">
+            <div class="card-container flex-1">
               <div class="img-container">
                 <img
                   src="./assets/post2.png"
@@ -301,7 +308,7 @@
                 </p>
               </div>
             </div>
-            <div class="card-container col-lg-4">
+            <div class="card-container flex-1">
               <div class="img-container">
                 <img
                   src="./assets/post3.png"

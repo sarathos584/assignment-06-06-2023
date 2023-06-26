@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 @font-face {
   font-family: Roboto;
   src: url(./fonts/Roboto-Regular.ttf);
 }
-
+@font-face {
+  font-family: Open-sans;
+  src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 *,
 ::after,
 ::before {
@@ -35,7 +37,7 @@
   text-align: center;
   color: #1f1f1f;
 }
-button{
+button {
   cursor: pointer;
 }
 .button {
@@ -59,6 +61,16 @@ button{
 }
 .btn-read i {
   margin-left: 0.5rem;
+}
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-1{
+  flex: 1;
+}
+.justify-center{
+  justify-content: center;
 }
 .row {
   display: grid;
@@ -130,7 +142,7 @@ nav .icon {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  width: 50%;
+  width: 25%;
   height: 100%;
   right: 0;
   bottom: 0;
@@ -388,7 +400,7 @@ textarea {
 }
 footer {
   background: #1f1f1f;
-  font-family: "Open sans", sans-serif;
+  font-family:open-sans;
   color: white;
   padding-bottom: 63px;
 }
@@ -558,6 +570,9 @@ footer h2 {
   .tasmania-img {
     order: 1;
   }
+  .tasmania-img img{
+    transform: scaleX(-1);
+  }
   .tasmania-content {
     order: 2;
   }
@@ -567,8 +582,11 @@ footer h2 {
   .form-container {
     grid-template-columns: 100%;
   }
+  .contact-img {
+    text-align: center;
+  }
   .contact img {
-    width: 100%;
+    width: 70%;
     height: auto;
     margin-bottom: 2rem;
   }
